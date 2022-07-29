@@ -1,30 +1,30 @@
 // Este código-fonte segue a definição completa dos padrões de codificação do Google para a linguagem de programação JavaScript.
 
+function lineBreak() {
+  document.write('<br>');
+}
+
 let currentYear = 2022;
 
 let firstUser = 'Donatello';
-let birthOfTheFirstUser = 1986;
-let ageOfFirstUser = currentYear - birthOfTheFirstUser;
+let ageOfTheFirstUser = currentYear - 1986;
 
 let secondUser = 'Leonardo';
-let birthOfTheSecondUser = 1987;
-let ageOfSecondUser = currentYear - birthOfTheSecondUser;
+let ageOfTheSecondUser = currentYear - 1987;
 
 let thirdUser = 'Michelangelo';
-let birthOfTheThirdUser = 1988;
-let ageOfThirdUser = currentYear - birthOfTheThirdUser;
+let ageOfTheThirdUser = currentYear - 1988;
 
 let fourthUser = 'Raphael';
-let birthOfTheFourthUser = 1989;
-let ageOfFourthUser = currentYear - birthOfTheFourthUser;
+let ageOfTheFourthUser = currentYear - 1989;
 
-let averageAgeOfUsers = (ageOfFirstUser + ageOfSecondUser + ageOfThirdUser + ageOfFourthUser) / 4;
+document.write(`${firstUser} tem ${ageOfTheFirstUser} anos de idade.`);
+lineBreak();
 
-let lineBreak = '<br>';
+document.write(`${secondUser} tem ${ageOfTheSecondUser} anos de idade.`);
+lineBreak();
 
-document.write(`${firstUser} tem ${ageOfFirstUser} anos de idade. ${lineBreak}`);
-document.write(`${secondUser} tem ${ageOfSecondUser} anos de idade. ${lineBreak}`);
-document.write(`${thirdUser} tem ${ageOfThirdUser} anos de idade. ${lineBreak}`);
-document.write(`${fourthUser} tem ${ageOfFourthUser} anos de idade. ${lineBreak + lineBreak}`);
+document.write(`${thirdUser} tem ${ageOfTheThirdUser} anos de idade.`);
+lineBreak();
 
-document.write(`A média das idades é ${Math.round(averageAgeOfUsers)} anos.`);
+document.write(`${fourthUser} tem ${ageOfTheFourthUser} anos de idade.`);
