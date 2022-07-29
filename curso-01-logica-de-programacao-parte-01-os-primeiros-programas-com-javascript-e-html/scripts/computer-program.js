@@ -2,14 +2,27 @@
 
 let currentYear = 2022;
 
-document.write(`Donatello tem ${currentYear - 1986} anos de idade. <br>`);
-document.write(`Leonardo tem ${currentYear - 1987} anos de idade. <br>`);
-document.write(`Michelangelo tem ${currentYear - 1988} anos de idade. <br>`);
-document.write(`Raphael tem ${currentYear - 1989} anos de idade. <br><br>`);
+let firstUser = 'Donatello';
+let birthOfTheFirstUser = 1986;
+let ageOfFirstUser = currentYear - birthOfTheFirstUser;
 
-currentYear = 2023;
+let secondUser = 'Leonardo';
+let birthOfTheSecondUser = 1987;
+let ageOfSecondUser = currentYear - birthOfTheSecondUser;
 
-document.write(`Donatello tem ${currentYear - 1986} anos de idade. <br>`);
-document.write(`Leonardo tem ${currentYear - 1987} anos de idade. <br>`);
-document.write(`Michelangelo tem ${currentYear - 1988} anos de idade. <br>`);
-document.write(`Raphael tem ${currentYear - 1989} anos de idade. <br>`);
+let thirdUser = 'Michelangelo';
+let birthOfTheThirdUser = 1988;
+let ageOfThirdUser = currentYear - birthOfTheThirdUser;
+
+let fourthUser = 'Raphael';
+let birthOfTheFourthUser = 1989;
+let ageOfFourthUser = currentYear - birthOfTheFourthUser;
+
+let averageAgeOfUsers = (ageOfFirstUser + ageOfSecondUser + ageOfThirdUser + ageOfFourthUser) / 4;
+
+document.write(`${firstUser} tem ${ageOfFirstUser} anos de idade. <br>`);
+document.write(`${secondUser} tem ${ageOfSecondUser} anos de idade. <br>`);
+document.write(`${thirdUser} tem ${ageOfThirdUser} anos de idade. <br>`);
+document.write(`${fourthUser} tem ${ageOfFourthUser} anos de idade. <br><br>`);
+
+document.write(`A média das idades é ${Math.round(averageAgeOfUsers)} anos.`);
