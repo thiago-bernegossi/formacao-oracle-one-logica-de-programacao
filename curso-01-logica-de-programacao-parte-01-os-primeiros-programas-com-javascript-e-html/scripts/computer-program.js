@@ -20,9 +20,11 @@ let ageOfFourthUser = currentYear - birthOfTheFourthUser;
 
 let averageAgeOfUsers = (ageOfFirstUser + ageOfSecondUser + ageOfThirdUser + ageOfFourthUser) / 4;
 
-document.write(`${firstUser} tem ${ageOfFirstUser} anos de idade. <br>`);
-document.write(`${secondUser} tem ${ageOfSecondUser} anos de idade. <br>`);
-document.write(`${thirdUser} tem ${ageOfThirdUser} anos de idade. <br>`);
-document.write(`${fourthUser} tem ${ageOfFourthUser} anos de idade. <br><br>`);
+let lineBreak = '<br>';
+
+document.write(`${firstUser} tem ${ageOfFirstUser} anos de idade. ${lineBreak}`);
+document.write(`${secondUser} tem ${ageOfSecondUser} anos de idade. ${lineBreak}`);
+document.write(`${thirdUser} tem ${ageOfThirdUser} anos de idade. ${lineBreak}`);
+document.write(`${fourthUser} tem ${ageOfFourthUser} anos de idade. ${lineBreak + lineBreak}`);
 
 document.write(`A média das idades é ${Math.round(averageAgeOfUsers)} anos.`);
