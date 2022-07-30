@@ -10,9 +10,7 @@ function displayText(parameter) {
 } 
 
 function calculateBmi(userHeight, userWeight) {
-  let bmi = userWeight / (userHeight * userHeight);
-  return bmi;
+  return userWeight / (userHeight * userHeight);
 }
 
-let bmiValue = calculateBmi(1.70, 70);
-displayText(`Após o cálculo, o valor do Índice de Massa Corporal é ${Math.round(bmiValue)}.`);
+displayText(`Após o cálculo, o valor do Índice de Massa Corporal é ${Math.round(bmiValue = calculateBmi(1.70, 70))}.`);
