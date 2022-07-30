@@ -4,6 +4,11 @@ function lineBreak() {
   document.write('<br>');
 }
 
+function displayText(parameter) {
+  document.write(parameter);
+  lineBreak();
+} 
+
 let currentYear = 2022;
 
 let firstUser = 'Donatello';
@@ -18,13 +23,7 @@ let ageOfTheThirdUser = currentYear - 1988;
 let fourthUser = 'Raphael';
 let ageOfTheFourthUser = currentYear - 1989;
 
-document.write(`${firstUser} tem ${ageOfTheFirstUser} anos de idade.`);
-lineBreak();
-
-document.write(`${secondUser} tem ${ageOfTheSecondUser} anos de idade.`);
-lineBreak();
-
-document.write(`${thirdUser} tem ${ageOfTheThirdUser} anos de idade.`);
-lineBreak();
-
-document.write(`${fourthUser} tem ${ageOfTheFourthUser} anos de idade.`);
+displayText(`${firstUser} tem ${ageOfTheFirstUser} anos de idade.`);
+displayText(`${secondUser} tem ${ageOfTheSecondUser} anos de idade.`);
+displayText(`${thirdUser} tem ${ageOfTheThirdUser} anos de idade.`);
+displayText(`${fourthUser} tem ${ageOfTheFourthUser} anos de idade.`);
