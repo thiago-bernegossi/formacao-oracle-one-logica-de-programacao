@@ -9,6 +9,9 @@ function process() {
   } else {
     window.alert(`03-) Infelizmente, você errou! O número sorteado não foi o ${userNumber.value}.`);
   }
+
+  userNumber.value = '';
+  userNumber.focus();
 }
 
 let sendButton = document.querySelector('button');
