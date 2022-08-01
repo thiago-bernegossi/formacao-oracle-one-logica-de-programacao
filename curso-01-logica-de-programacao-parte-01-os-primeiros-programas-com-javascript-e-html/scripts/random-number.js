@@ -10,10 +10,17 @@ function displayText(parameter) {
 } 
 
 let randomNumber = Math.round(Math.random() * 10);
-let userNumber = parseInt(window.prompt(`01-) Olá! Para iniciarmos, digite um número entre 0 a 10:`)); 
+let increment = 1;
 
-if (randomNumber == userNumber) {
-  displayText(`02-) Parabéns, você acertou! O número sorteado foi o ${randomNumber}.`);
-} else {
-  displayText(`02-) Infelizmente, você errou! O número sorteado foi o ${randomNumber}.`);
+while (increment <= 3) {
+  let userNumber = parseInt(window.prompt(`Olá! Para iniciarmos, digite um número entre 0 a 10:`)); 
+
+  if (randomNumber == userNumber) {
+    displayText(`Parabéns, você acertou! O número sorteado foi o ${randomNumber}.`);
+    break;
+  } else {
+    displayText(`Infelizmente, você errou! O número sorteado não foi o ${userNumber}.`);
+  }
+
+  increment++;
 }
