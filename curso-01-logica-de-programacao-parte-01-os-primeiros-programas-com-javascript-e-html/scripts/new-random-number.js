@@ -1,6 +1,37 @@
 // Este código-fonte segue a definição completa dos padrões de codificação do Google para a linguagem de programação JavaScript.
 
-let numbers = [1, 5, 10];
+function generateNumber() {
+  return Math.round(Math.random() * 10);
+}
+
+function generatesMultipleNumbers(quantity) {
+  let listOfNumbers = [];
+  let number = 1;
+
+  while (number <= quantity) {
+    let randomNumber = generateNumber();
+
+    if (randomNumber !== 0) {
+      let uniqueNumber = false;
+
+      for (position = 0; position < listOfNumbers.length; position++) {
+        if (listOfNumbers[position] == randomNumber) {
+          uniqueNumber = true;
+          break;
+        }
+      }
+
+      if (uniqueNumber == false) {
+        listOfNumbers.push(randomNumber);
+        number++;
+      }
+    }
+  }
+
+  return listOfNumbers;
+}
+
+let numbers = generatesMultipleNumbers(3);
 let userNumber = document.querySelector('input');
 
 function process() {
