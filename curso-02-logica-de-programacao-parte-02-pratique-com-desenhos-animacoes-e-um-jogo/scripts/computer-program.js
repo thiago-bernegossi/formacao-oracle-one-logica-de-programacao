@@ -25,3 +25,8 @@ brush.moveTo(300, 200);
 brush.lineTo(200, 400);
 brush.lineTo(400, 400);
 brush.fill();
+
+brush.fillStyle = '#ff4040';
+brush.beginPath();
+brush.arc(300, 200, 50, 0, 2 * 3.14);
+brush.fill();
