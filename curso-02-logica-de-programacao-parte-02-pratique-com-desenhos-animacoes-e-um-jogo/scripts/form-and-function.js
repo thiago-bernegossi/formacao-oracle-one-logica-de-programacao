@@ -10,6 +10,19 @@ function drawSquare(xAxis, yAxis, squareColor, lineColor) {
   brush.strokeRect(xAxis, yAxis, 50, 50);
 }
 
-drawSquare(0, 0, '#cc0000', '000');
-drawSquare(0, 50, '#ffd700', '000');
-drawSquare(0, 100, '#008000', '000');
+/**
+ * let x = 0;
+ * 
+ * while (x < 600) {
+ *  drawSquare(x, 0, '#cc0000', '000');
+ *  drawSquare(x, 50, '#ffd700', '000');
+ *  drawSquare(x, 100, '#008000', '000'); 
+ *  x += 50;
+ * }
+ */
+
+for (let x = 0; x < 600; x += 50) {
+  drawSquare(x, 0, '#cc0000', '000');
+  drawSquare(x, 50, '#ffd700', '000');
+  drawSquare(x, 100, '#008000', '000');
+}
