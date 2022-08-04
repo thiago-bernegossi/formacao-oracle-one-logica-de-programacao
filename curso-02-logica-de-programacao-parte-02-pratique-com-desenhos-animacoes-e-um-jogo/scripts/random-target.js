@@ -6,14 +6,16 @@ let brush = screen.getContext('2d');
 brush.fillStyle = '#fff';
 brush.fillRect(0, 0, 600, 400);
 
+let radius = 10;
+let randomXAxis;
+let randomYAxis;
+
 function drawCircle(xAxis, yAxis, radius, color) {
   brush.fillStyle = color;
   brush.beginPath();
   brush.arc(xAxis, yAxis, radius, 0, 2 * Math.PI);
   brush.fill();
 }
-
-let radius = 10;
 
 function drawTarget(xAxis, yAxis) {
   drawCircle(xAxis, yAxis, radius + 20, '#dc143c');
@@ -32,9 +34,23 @@ function cleanScreen() {
 function refreshScreen() {
   cleanScreen();
 
-  let xAxis = moveTarget(600);
-  let yAxis = moveTarget(400);  
-  drawTarget(xAxis, yAxis);
+  randomXAxis = moveTarget(600);
+  randomYAxis = moveTarget(400);
+  drawTarget(randomXAxis, randomYAxis);
 }
 
 setInterval(refreshScreen, 1000);
+
+function showMessage(event) {
+  let xAxis = event.pageX - screen.offsetLeft;
+  let yAxis = event.pageY - screen.offsetTop;
+
+  if ((xAxis > randomXAxis - radius) &&
+    (xAxis < randomXAxis + radius) &&
+    (yAxis > randomYAxis - radius) &&
+    (yAxis < randomYAxis + radius)) {
+    window.alert(`Você acertou o alvo!`);
+  }
+}
+
+screen.onclick = showMessage;
