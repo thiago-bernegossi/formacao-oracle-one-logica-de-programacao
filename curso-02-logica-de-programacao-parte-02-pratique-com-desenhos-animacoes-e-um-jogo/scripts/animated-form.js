@@ -13,4 +13,6 @@ function drawCircle(xAxis, yAxis, radius) {
   brush.fill();
 }
 
-drawCircle(300, 200, 100);
+function cleanScreen() {
+  brush.clearRect(0, 0, 600, 400);
+}
