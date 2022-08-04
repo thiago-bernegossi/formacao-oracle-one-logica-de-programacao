@@ -3,11 +3,19 @@
 let screen = document.querySelector('canvas');
 let brush = screen.getContext('2d');
 
-brush.fillStyle = '#e6e6fa';
+brush.fillStyle = '#665f68';
 brush.fillRect(0, 0, 600, 400);
 
-function displayAlert() {
-  window.alert('Você clicou!');
+function drawCircle(event) {
+  let xAxis = event.pageX - screen.offsetLeft;
+  let yAxis = event.pageY - screen.offsetTop;
+
+  brush.fillStyle = '#fff';
+  brush.beginPath();
+  brush.arc(xAxis, yAxis, 20, 0, 2 * 3.14);
+  brush.fill();
+  
+  console.log(`x = ${xAxis}, y = ${yAxis}.`);
 }
 
-screen.onclick = displayAlert;
+screen.onclick = drawCircle;
