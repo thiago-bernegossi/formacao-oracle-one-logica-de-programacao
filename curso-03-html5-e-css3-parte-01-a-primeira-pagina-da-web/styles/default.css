@@ -12,6 +12,9 @@
 }
 
 /* Body */
+body {
+  background-color: #ccc;
+}
 
 /* Header */
 h1 {
@@ -31,8 +34,12 @@ p {
   text-align: center;
 }
 
-p em {
+em {
   font-size: 20px;
+}
+
+em strong {
+  color: #ff0000;  
 }
 
 /* Footer */
