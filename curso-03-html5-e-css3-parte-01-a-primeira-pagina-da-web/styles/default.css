@@ -13,25 +13,24 @@
 
 /* Body */
 body {
+  background-color: #fff;
+}
+
+/* Header */
+
+/* Div */
+#principal {
   background-color: #ccc;
 }
 
-/* Header */
-#top-banner {
+#banner {
   width: 100%;
 }
 
+/* Header */
 h1 {
   text-align: center;
 }
-
-/* Nav */
-
-/* Main */
-
-/* Section */
-
-/* Header */
 
 /* Article */
 p {
@@ -48,7 +47,18 @@ em strong {
 
 /* Footer */
 
+/* Nav */
+
+/* Main */
+
+/* Section */
+
+/* Div */
+
 /* Header */
+h2 {
+  text-align: center;
+}
 
 /* Article */
 .benefit-items {
