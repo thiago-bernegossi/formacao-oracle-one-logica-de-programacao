@@ -17,6 +17,10 @@ body {
 }
 
 /* Header */
+.principal-title {
+  padding-left: 20px;
+}
+
 #interior {
   width: 100%;
 }
@@ -34,7 +38,7 @@ body {
 }
 
 /* Header */
-h1 {
+.secondary-title {
   text-align: center;
 }
 
