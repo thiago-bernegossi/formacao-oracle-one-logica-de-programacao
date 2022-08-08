@@ -17,14 +17,20 @@ body {
 }
 
 /* Header */
-
-/* Div */
-#principal {
-  background-color: #ccc;
+#interior {
+  width: 100%;
 }
 
-#banner {
-  width: 100%;
+/* Nav */
+
+/* Main */
+
+/* Section */
+
+/* Div */
+.principal {
+  background-color: #ccc;
+  padding: 30px;
 }
 
 /* Header */
@@ -47,13 +53,12 @@ em strong {
 
 /* Footer */
 
-/* Nav */
-
-/* Main */
-
 /* Section */
 
 /* Div */
+.benefits {
+  padding: 30px;
+}
 
 /* Header */
 h2 {
@@ -61,11 +66,29 @@ h2 {
 }
 
 /* Article */
+.benefits > article {
+  display: inline;
+}
+
+ul {
+  display: inline-block;
+  margin-right: 20%;  
+  vertical-align: top;
+  width: 15%;
+}
+
 .benefit-items {
   font-style: italic;
 }
 
 /* Footer */
+.benefits > footer {
+  display: inline;
+}
+
+#benefits {
+  width: 50%;
+}
 
 /* Aside */
 
