@@ -52,6 +52,32 @@ nav a {
 /* Header */
 
 /* Article */
+.services {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 940px;
+}
+
+.services li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 30%;
+}
+
+.services h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.service-description {
+  font-size: 18px;
+}
+
+.service-price {
+  font-size: 22px;
+  font-weight: bold;
+}
 
 /* Footer */
 
