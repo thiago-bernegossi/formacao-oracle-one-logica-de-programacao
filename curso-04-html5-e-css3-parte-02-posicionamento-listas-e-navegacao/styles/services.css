@@ -59,7 +59,10 @@ nav a {
 }
 
 .services li {
+  box-sizing: border-box;
   display: inline-block;
+  margin: 0 1.5%;
+  padding: 30px 20px;
   text-align: center;
   vertical-align: top;
   width: 30%;
@@ -77,6 +80,7 @@ nav a {
 .service-price {
   font-size: 22px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 /* Footer */
