@@ -1,0 +1,99 @@
+/* Este código-fonte segue a definição completa das regras de formatação e estilo do Google para HTML e CSS. */
+
+/* Redefinição · CSS */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+}
+
+/* Body */
+body {
+  background-color: #fff;
+}
+
+/* Header */
+.principal-title {
+  padding-left: 20px;
+}
+
+#interior {
+  width: 100%;
+}
+
+/* Nav */
+
+/* Main */
+
+/* Section */
+
+/* Div */
+.principal {
+  background-color: #ccc;
+  padding: 30px;
+}
+
+/* Header */
+.secondary-title {
+  text-align: center;
+}
+
+/* Article */
+p {
+  text-align: center;
+}
+
+#company-mission {
+  font-size: 20px;
+}
+
+em strong {
+  color: #ff0000;  
+}
+
+/* Footer */
+
+/* Section */
+
+/* Div */
+.benefits {
+  padding: 30px;
+}
+
+/* Header */
+h2 {
+  text-align: center;
+}
+
+/* Article */
+.benefits > article {
+  display: inline;
+}
+
+ul {
+  display: inline-block;
+  margin-right: 20%;  
+  vertical-align: top;
+  width: 15%;
+}
+
+.benefit-items {
+  font-style: italic;
+}
+
+/* Footer */
+.benefits > footer {
+  display: inline;
+}
+
+#benefits {
+  width: 50%;
+}
+
+/* Aside */
+
+/* Footer */
