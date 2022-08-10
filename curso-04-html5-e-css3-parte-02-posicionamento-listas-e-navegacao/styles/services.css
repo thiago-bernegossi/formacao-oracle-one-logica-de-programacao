@@ -18,11 +18,18 @@ header {
   background-color: #bbb;
 }
 
+/* Div */
+.container-limit {
+  margin: 0 auto;
+  position: relative;
+  width: 940px;
+}
+
 /* Nav */
 nav {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 110px;
 }
   
 nav li {
