@@ -19,6 +19,12 @@ header {
 }
 
 /* Nav */
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+  
 nav li {
   display: inline;
   margin-left: 15px;
