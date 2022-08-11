@@ -29,7 +29,7 @@ header {
 nav {
   position: absolute;
   right: 0;
-  top: 110px;
+  top: 112.5px;
 }
   
 nav li {
@@ -59,6 +59,7 @@ nav a {
 }
 
 .services li {
+  border: 2px solid #000;
   box-sizing: border-box;
   display: inline-block;
   margin: 0 1.5%;
