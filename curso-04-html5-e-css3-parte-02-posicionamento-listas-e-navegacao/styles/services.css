@@ -75,6 +75,18 @@ nav a:hover {
   width: 30%;
 }
 
+.services li:active {
+  border-color: #088c19;
+}
+
+.services li:hover {
+  border-color: #c78c19;  
+}
+
+.services li:hover h2 {
+  font-size: 34px;
+}
+
 .services h2 {
   font-size: 30px;
   font-weight: bold;
