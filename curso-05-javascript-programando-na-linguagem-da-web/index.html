@@ -13,23 +13,64 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="index.html" dir="ltr">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/default.css">
     <title>Prática Pedagógica · Formação Oracle ONE: Lógica de Programação</title>
   </head>
   <body>
     <header>
-      <h1></h1>
-      <nav></nav>
+      <div class="container">
+        <h1>Alura Nutrição</h1>
+      </div>
     </header>
     <main>
-      <section>
-        <header></header>
-        <article></article>
-        <footer></footer>
+      <section class="container">
+        <h2>Lista de Pacientes</h2>
+        <article>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Peso (kg)</th>
+                <th>Altura (m)</th>
+                <th>Gordura Corporal (%)</th>
+                <th>IMC</th>
+              </tr>
+            </thead>
+            <tbody id="patient-table">
+              <tr class="patient">
+                <td class="info-name">Donatello</td>
+                <td class="info-weight">97</td>
+                <td class="info-height">1.73</td>
+                <td class="info-fat">7</td>
+                <td class="info-bmi">0</td>
+              </tr>
+              <tr class="patient">
+                <td class="info-name">Leonardo</td>
+                <td class="info-weight">98</td>
+                <td class="info-height">1.74</td>
+                <td class="info-fat">8</td>
+                <td class="info-bmi">0</td>
+              </tr>
+              <tr class="patient">
+                <td class="info-name">Michelangelo</td>
+                <td class="info-weight">99</td>
+                <td class="info-height">1.75</td>
+                <td class="info-fat">9</td>
+                <td class="info-bmi">0</td>
+              </tr>
+              <tr class="patient">
+                <td class="info-name">Raphael</td>
+                <td class="info-weight">100</td>
+                <td class="info-height">1.76</td>
+                <td class="info-fat">10</td>
+                <td class="info-bmi">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
       </section>
-      <aside></aside>
     </main>
-    <footer></footer>
     <script src="scripts/main.js"></script>
   </body>
 </html>
