@@ -22,11 +22,13 @@ for (let counter = 0; counter < patients.length; counter++) {
   if (weight <= 0 || weight >= 1000) {
     weightIsValid = false;
     infoBmi.textContent = `O valor do peso é inválido!`;
+    patient.classList.add('reportError');
   }
   
   if (height <= 0 || height >= 3.00) {
     heightIsValid = false;
     infoBmi.textContent = `O valor da altura é inválido!`;
+    patient.classList.add('reportError');
   }
   
   if (weightIsValid === true && heightIsValid === true) {

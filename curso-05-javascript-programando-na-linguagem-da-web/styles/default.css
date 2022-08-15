@@ -80,6 +80,10 @@ th {
 	font-weight: bold;
 }
 
+.reportError {
+	background-color: #f08080;
+}
+
 label {
 	color: #555;
 	display: block;
