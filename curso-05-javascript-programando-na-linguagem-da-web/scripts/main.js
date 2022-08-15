@@ -12,5 +12,21 @@ let infoHeight = patient.querySelector('.info-height');
 let height = infoHeight.textContent;
 
 let infoBmi = patient.querySelector('.info-bmi');
-let bmi = weight / (height * height);
-infoBmi.textContent = Math.round(bmi);
+
+let weightIsValid = true;
+let heightIsValid = true;
+
+if (weight <= 0 || weight >= 1000) {
+  weightIsValid = false;
+  infoBmi.textContent = `O valor do peso é inválido!`;
+}
+
+if (height <= 0 || height >= 3.00) {
+  heightIsValid = false;
+  infoBmi.textContent = `O valor da altura é inválido!`;
+}
+
+if (weightIsValid === true && heightIsValid === true) {
+  let bmi = weight / (height * height);
+  infoBmi.textContent = Math.round(bmi);
+}
