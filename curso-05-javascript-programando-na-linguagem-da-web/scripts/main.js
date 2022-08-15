@@ -10,3 +10,7 @@ let weight = infoWeight.textContent;
 
 let infoHeight = patient.querySelector('.info-height');
 let height = infoHeight.textContent;
+
+let infoBmi = patient.querySelector('.info-bmi');
+let bmi = weight / (height * height);
+infoBmi.textContent = Math.round(bmi);
