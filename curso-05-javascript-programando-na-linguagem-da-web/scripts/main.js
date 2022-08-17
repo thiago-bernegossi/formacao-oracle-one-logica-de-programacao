@@ -1,6 +1,6 @@
 // Este código-fonte segue a definição completa dos padrões de codificação do Google para a linguagem de programação JavaScript.
 
-let companyName = (document.querySelector('.secondary-title'));
+let companyName = document.querySelector('.secondary-title');
 companyName.textContent = 'Lista de Pacientes';
 
 // Obs.: Função anônima!
@@ -41,3 +41,11 @@ for (let counter = 0; counter < patients.length; counter++) {
     infoBmi.textContent = bmi.toFixed(2);
   }
 }
+
+let addButton = document.querySelector('#add-button');
+
+// Obs.: Função anônima!
+addButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  window.alert(`O elemento 'botão' fora clicado!`);
+});
