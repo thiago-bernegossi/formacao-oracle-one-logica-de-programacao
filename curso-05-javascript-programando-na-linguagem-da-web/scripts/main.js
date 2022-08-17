@@ -3,11 +3,6 @@
 let companyName = document.querySelector('.secondary-title');
 companyName.textContent = 'Lista de Pacientes';
 
-// Obs.: Função anônima!
-companyName.addEventListener('click', function () {
-  window.alert(`O elemento 'h2' fora clicado!`);
-});
-
 let patients = document.querySelectorAll('.patient');
 
 for (let counter = 0; counter < patients.length; counter++) {
@@ -47,5 +42,32 @@ let addButton = document.querySelector('#add-button');
 // Obs.: Função anônima!
 addButton.addEventListener('click', function (event) {
   event.preventDefault();
-  window.alert(`O elemento 'botão' fora clicado!`);
+  
+  let patientForm = document.querySelector('#patient-form');
+
+  let name = patientForm.name.value;
+  let weight = patientForm.weight.value;
+  let height = patientForm.height.value;
+  let percentage = patientForm.percentage.value;
+
+  let newPatient = document.createElement('tr');
+
+  let userName = document.createElement('td');
+  userName.textContent = name;
+  newPatient.appendChild(userName);
+
+  let userWeight = document.createElement('td');
+  userWeight.textContent = weight;
+  newPatient.appendChild(userWeight);
+
+  let userHeight = document.createElement('td');
+  userHeight.textContent = height;
+  newPatient.appendChild(userHeight);
+
+  let userPercentage = document.createElement('td');
+  userPercentage.textContent = percentage;
+  newPatient.appendChild(userPercentage);
+
+  let completeData = document.querySelector('#patient-table');
+  completeData.appendChild(newPatient);
 });
