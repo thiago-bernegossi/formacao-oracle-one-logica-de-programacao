@@ -31,6 +31,10 @@ addButton.addEventListener('click', function (event) {
   userPercentage.textContent = percentage;
   newPatient.appendChild(userPercentage);
 
+  let userBmi = document.createElement('td');
+  userBmi.textContent = calculateBmi(weight, height);
+  newPatient.appendChild(userBmi);
+
   let completeData = document.querySelector('#patient-table');
   completeData.appendChild(newPatient);
 });

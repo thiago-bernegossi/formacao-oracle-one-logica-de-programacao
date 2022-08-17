@@ -1,5 +1,12 @@
 // Este código-fonte segue a definição completa dos padrões de codificação do Google para a linguagem de programação JavaScript.
 
+function calculateBmi(weight, height) {
+  let bmi = weight / (height * height);
+  return bmi.toFixed(2);
+}
+
+let patients = document.querySelectorAll('.patient');
+
 for (let counter = 0; counter < patients.length; counter++) {
   let patient = patients[counter]; 
 
@@ -27,7 +34,7 @@ for (let counter = 0; counter < patients.length; counter++) {
   }
   
   if (weightIsValid === true && heightIsValid === true) {
-    let bmi = weight / (height * height);
-    infoBmi.textContent = bmi.toFixed(2);
+    let bmi = calculateBmi(weight, height)
+    infoBmi.textContent = bmi;
   }
 }
