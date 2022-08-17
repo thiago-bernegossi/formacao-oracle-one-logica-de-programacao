@@ -84,8 +84,46 @@ th {
 	background-color: #f08080;
 }
 
+/* Section */
+
+/* Article */
 label {
 	color: #555;
 	display: block;
+	font-weight: bold;
 	margin-bottom: 0.2em;
+}
+
+.text-field {
+	border: 1px solid #ccc;
+	display: inline-block;
+	margin-bottom: 0.5em;
+	padding: 0.75em;	
+	width: 100%;
+}
+
+button {
+	background-color: #0c8cd3;
+	border: 0;
+	border-bottom: 3px solid;
+	border-color: #04324c;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.2em;
+	margin: -3px 0 0 0;
+	padding: 0.5em 2em;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+}
+
+button:active {
+	border: 0;
+	margin-top: 0px;
+}
+
+button[disabled=disabled], button:disabled {
+  background-color: #808080;
+	border-color: #a9a9a9;
 }
