@@ -13,11 +13,17 @@ function extractData(patientForm) {
 }
 
 function checkData(patient) {
-  if (checkWeight(patient.weight)) {
-    return true;
-  } else {
-    return false;
+  let errorMessages = [];
+
+  if (!checkWeight(patient.weight)) {
+    errorMessages.push(`O valor do peso (kg) é inválido!`);
   }
+
+  if (!checkHeight(patient.height)) {
+    errorMessages.push(`O valor da altura (m) é inválido!`);
+  }
+
+  return errorMessages;
 }
 
 function addClass(value, className) {
@@ -47,8 +53,11 @@ addButton.addEventListener('click', function (event) {
   let patientForm = document.querySelector('#patient-form');
   let patient = extractData(patientForm);
   let bridgeToData = insertData(patient);
-
-  if (!checkData(patient)) {
+  
+  let errorMessage = checkData(patient);
+  if (errorMessage > 0) {
+    let message = document.querySelector('#error-message');
+    message.textContent = errorMessage;
     return;
   }
 
