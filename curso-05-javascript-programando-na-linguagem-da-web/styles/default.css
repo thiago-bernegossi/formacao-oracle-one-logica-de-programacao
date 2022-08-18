@@ -85,6 +85,10 @@ th {
 }
 
 /* Section */
+#error-messages {
+	color: #f00;
+	margin-bottom: 0.5em;
+}
 
 /* Article */
 label {
