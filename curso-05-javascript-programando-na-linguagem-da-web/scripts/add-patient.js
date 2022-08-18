@@ -12,45 +12,36 @@ function extractData(patientForm) {
   return patient;
 }
 
-let addButton = document.querySelector('#add-button');
+function addClass(value, className) {
+  let element = document.createElement('td');
+  element.textContent = value;
+  element.classList.add(className);  
+  return element;
+}
 
-// Obs.: Função anônima!
+function insertData(patient) {
+  let newPatient = document.createElement('tr');
+  newPatient.classList.add('patient');
+
+  newPatient.appendChild(addClass(patient.name, 'info-name'));
+  newPatient.appendChild(addClass(patient.weight, 'info-weight'));
+  newPatient.appendChild(addClass(patient.height, 'info-height'));
+  newPatient.appendChild(addClass(patient.percentage, 'info-percentage'));
+  newPatient.appendChild(addClass(patient.bmi, 'info-bmi'));
+
+  return newPatient;
+}
+
+let addButton = document.querySelector('#add-button');
 addButton.addEventListener('click', function (event) {
   event.preventDefault();
   
   let patientForm = document.querySelector('#patient-form');
-
   let patient = extractData(patientForm);
-  console.log(patient);
-
-  let name = patient.name.value;
-  let weight = patient.weight.value;
-  let height = patient.height.value;
-  let percentage = patient.percentage.value;
-  let bmi = calculateBmi(patientForm.weight.value, patientForm.height.value);
-
-  let newPatient = document.createElement('tr');
-
-  let userName = document.createElement('td');
-  userName.textContent = name;
-  newPatient.appendChild(userName);
-
-  let userWeight = document.createElement('td');
-  userWeight.textContent = weight;
-  newPatient.appendChild(userWeight);
-
-  let userHeight = document.createElement('td');
-  userHeight.textContent = height;
-  newPatient.appendChild(userHeight);
-
-  let userPercentage = document.createElement('td');
-  userPercentage.textContent = percentage;
-  newPatient.appendChild(userPercentage);
-
-  let userBmi = document.createElement('td');
-  userBmi.textContent = calculateBmi(weight, height);
-  newPatient.appendChild(userBmi);
+  let bridgeToData = insertData(patient);
 
   let completeData = document.querySelector('#patient-table');
-  completeData.appendChild(newPatient);
+  completeData.appendChild(bridgeToData);
+
+  patientForm.reset();
 });
