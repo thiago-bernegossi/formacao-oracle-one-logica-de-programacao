@@ -12,6 +12,14 @@ function extractData(patientForm) {
   return patient;
 }
 
+function checkData(patient) {
+  if (checkWeight(patient.weight)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function addClass(value, className) {
   let element = document.createElement('td');
   element.textContent = value;
@@ -39,6 +47,10 @@ addButton.addEventListener('click', function (event) {
   let patientForm = document.querySelector('#patient-form');
   let patient = extractData(patientForm);
   let bridgeToData = insertData(patient);
+
+  if (!checkData(patient)) {
+    return;
+  }
 
   let completeData = document.querySelector('#patient-table');
   completeData.appendChild(bridgeToData);

@@ -1,5 +1,21 @@
 // Este código-fonte segue a definição completa dos padrões de codificação do Google para a linguagem de programação JavaScript.
 
+function checkWeight(weight) {
+  if (weight > 0 && weight < 1000) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function checkHeight(height) {
+  if (height > 0 && height < 3.00) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function calculateBmi(weight, height) {
   let bmi = weight / (height * height);
   return bmi.toFixed(2);
@@ -18,22 +34,22 @@ for (let counter = 0; counter < patients.length; counter++) {
   
   let infoBmi = patient.querySelector('.info-bmi');
   
-  let weightIsValid = true;
-  let heightIsValid = true;
+  let weightIsValid = checkWeight(weight);
+  let heightIsValid = checkHeight(height);
   
-  if (weight <= 0 || weight >= 1000) {
+  if (!weightIsValid) {
     weightIsValid = false;
     infoBmi.textContent = `O valor do peso (kg) é inválido!`;
     patient.classList.add('reportError');
   }
   
-  if (height <= 0 || height >= 3.00) {
+  if (!heightIsValid) {
     heightIsValid = false;
     infoBmi.textContent = `O valor da altura (m) é inválido!`;
     patient.classList.add('reportError');
   }
   
-  if (weightIsValid === true && heightIsValid === true) {
+  if (weightIsValid && heightIsValid) {
     let bmi = calculateBmi(weight, height)
     infoBmi.textContent = bmi;
   }
