@@ -1,5 +1,17 @@
 // Este código-fonte segue a definição completa dos padrões de codificação do Google para a linguagem de programação JavaScript.
 
+function extractData(patientForm) {
+  let patient = {
+    name: patientForm.name.value,
+    weight: patientForm.weight.value,
+    height: patientForm.height.value,
+    percentage: patientForm.percentage.value,
+    bmi: calculateBmi(patientForm.weight.value, patientForm.height.value)
+  }
+
+  return patient;
+}
+
 let addButton = document.querySelector('#add-button');
 
 // Obs.: Função anônima!
@@ -8,10 +20,14 @@ addButton.addEventListener('click', function (event) {
   
   let patientForm = document.querySelector('#patient-form');
 
-  let name = patientForm.name.value;
-  let weight = patientForm.weight.value;
-  let height = patientForm.height.value;
-  let percentage = patientForm.percentage.value;
+  let patient = extractData(patientForm);
+  console.log(patient);
+
+  let name = patient.name.value;
+  let weight = patient.weight.value;
+  let height = patient.height.value;
+  let percentage = patient.percentage.value;
+  let bmi = calculateBmi(patientForm.weight.value, patientForm.height.value);
 
   let newPatient = document.createElement('tr');
 
