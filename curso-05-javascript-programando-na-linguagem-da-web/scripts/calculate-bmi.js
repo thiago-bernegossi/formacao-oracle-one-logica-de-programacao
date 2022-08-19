@@ -21,32 +21,32 @@ function calculateBmi(weight, height) {
   return bmi.toFixed(2);
 }
 
-let patients = document.querySelectorAll(`.patient`);
+let patients = document.querySelectorAll('.patient');
 
 for (let counter = 0; counter < patients.length; counter++) {
   let patient = patients[counter]; 
 
-  let infoWeight = patient.querySelector(`.info-weight`);
+  let infoWeight = patient.querySelector('.info-weight');
   let weight = infoWeight.textContent;
   
-  let infoHeight = patient.querySelector(`.info-height`);
+  let infoHeight = patient.querySelector('.info-height');
   let height = infoHeight.textContent;
   
-  let infoBmi = patient.querySelector(`.info-bmi`);
+  let infoBmi = patient.querySelector('.info-bmi');
   
   let weightIsValid = checkWeight(weight);
   let heightIsValid = checkHeight(height);
   
   if (!weightIsValid) {
     weightIsValid = false;
-    infoBmi.textContent = `O valor do peso (kg) é inválido!`;
-    patient.classList.add(`reportError`);
+    infoBmi.textContent = 'O valor do peso (kg) é inválido!';
+    patient.classList.add('reportError');
   }
   
   if (!heightIsValid) {
     heightIsValid = false;
-    infoBmi.textContent = `O valor da altura (m) é inválido!`;
-    patient.classList.add(`reportError`);
+    infoBmi.textContent = 'O valor da altura (m) é inválido!';
+    patient.classList.add('reportError');
   }
   
   if (weightIsValid && heightIsValid) {
