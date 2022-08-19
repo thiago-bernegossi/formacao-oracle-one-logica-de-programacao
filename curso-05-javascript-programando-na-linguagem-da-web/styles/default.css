@@ -66,6 +66,10 @@ section h2 {
 	margin-bottom: 10px;
 }
 
+.hideValues {
+	display: none;
+}
+
 /* Section */
 
 /* Article */
