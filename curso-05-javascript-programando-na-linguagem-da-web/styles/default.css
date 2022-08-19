@@ -84,6 +84,11 @@ th {
 	background-color: #f08080;
 }
 
+.fadeAction  {
+	opacity: 0;
+	transition: 0.5s;
+}
+
 /* Section */
 #error-messages {
 	color: #f00;
