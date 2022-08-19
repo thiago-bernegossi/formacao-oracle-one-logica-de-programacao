@@ -62,6 +62,13 @@ section h2 {
 }
 
 /* Article */
+.article {
+	margin-bottom: 10px;
+}
+
+/* Section */
+
+/* Article */
 table {
 	margin-bottom: 0.5em;
   table-layout: fixed;

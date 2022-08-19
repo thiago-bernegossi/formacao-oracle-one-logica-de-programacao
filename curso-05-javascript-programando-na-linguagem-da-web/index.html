@@ -25,8 +25,15 @@
     </header>
     <main>
       <section class="container">
-        <h2 class="secondary-title"></h2>
-        <article class="first-article">
+        <h2 class="secondary-title">Localizar Pacientes</h2>
+        <article class="article">        
+          <label for="filtered-value">Nome:</label>
+          <input id="filtered-value" class="text-field" name="name" type="text" placeholder="Digite o nome do paciente:">
+        </article>
+      </section>
+      <section class="container">
+        <h2 class="secondary-title">Lista de Pacientes</h2>
+        <article class="article">
           <table>
             <thead>
               <tr>
@@ -72,9 +79,9 @@
       </section>
       <br>
       <section class="container">
-        <h2 class="secondary-title">Adicionar Paciente</h2>
+        <h2 class="secondary-title">Adicionar Pacientes</h2>
         <ul id="error-messages"></ul>
-        <article class="second-article">
+        <article class="article">
           <form id="patient-form">
             <div class="patient-data">
               <label for="name">Nome:</label>
@@ -100,6 +107,7 @@
     <script src="scripts/calculate-bmi.js"></script>
     <script src="scripts/create-patient.js"></script>
     <script src="scripts/delete-patient.js"></script>
+    <script src="scripts/locate-patient.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
