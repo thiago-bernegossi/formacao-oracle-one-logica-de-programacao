@@ -10,8 +10,9 @@ filteredValue.addEventListener('input', function() {
       let patient = patients[counter];
       let tableData = patient.querySelector('.info-name');
       let name = tableData.textContent;
-
-      if (name != this.value) {
+      let expression = new RegExp(this.value, 'i');
+      
+      if (!expression.test(name)) {
         patient.classList.add('hideValues');
       } else {
         patient.classList.remove('hideValues');
