@@ -2,7 +2,7 @@
 
 let filteredValue = document.querySelector('#filtered-value');
 
-filteredValue.addEventListener('input', function() {
+filteredValue.addEventListener('input', function () {
   let patients = document.querySelectorAll('.patient');
 
   if (this.value.length > 0) {

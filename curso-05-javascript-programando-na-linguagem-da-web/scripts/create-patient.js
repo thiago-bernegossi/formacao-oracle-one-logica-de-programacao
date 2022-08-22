@@ -30,7 +30,7 @@ function displaysTheErrorMessages(errorMessages) {
   let unorderedList = document.querySelector('#error-messages');
   unorderedList.innerHTML = '';
   
-  errorMessages.forEach(function(error) {
+  errorMessages.forEach(function (error) {
     let listItem = document.createElement('li');
     listItem.textContent = error;
     unorderedList.appendChild(listItem);
@@ -57,13 +57,19 @@ function insertData(patient) {
   return newPatient;
 }
 
+function addPatient(patient) {
+  let bridgeToData = insertData(patient);
+
+  let completeData = document.querySelector('#patient-table');
+  completeData.appendChild(bridgeToData);
+}
+
 let addButton = document.querySelector('#add-button');
 addButton.addEventListener('click', function (event) {
   event.preventDefault();
   
   let patientForm = document.querySelector('#patient-form');
   let patient = extractData(patientForm);
-  let bridgeToData = insertData(patient);
 
   let errors = checkData(patient);
   if (errors.length > 0) {
@@ -71,9 +77,8 @@ addButton.addEventListener('click', function (event) {
     return;
   }
 
-  let completeData = document.querySelector('#patient-table');
-  completeData.appendChild(bridgeToData);
-
+  addPatient(patient);
+  
   patientForm.reset();
 
   let clearErrorMessages = document.querySelector('#error-messages');

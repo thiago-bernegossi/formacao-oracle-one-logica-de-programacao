@@ -2,10 +2,10 @@
 
 let patientsToRemove = document.querySelector('table');
 
-patientsToRemove.addEventListener('dblclick', function(event) {
+patientsToRemove.addEventListener('dblclick', function (event) {
   event.target.parentNode.classList.add('fadeAction');
 
-  setTimeout(function() {
+  setTimeout(function () {
     event.target.parentNode.remove();
   }, 500);
 });
