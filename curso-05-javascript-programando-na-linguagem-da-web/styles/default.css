@@ -101,6 +101,11 @@ th {
 }
 
 /* Section */
+.show-message {
+	color: #f00;
+	display: none;
+	margin-bottom: 0.5em;
+}
 
 /* Article */
 

@@ -7,12 +7,30 @@ searchButton.addEventListener('click', function () {
   request.open('get', 'https://api-pacientes.herokuapp.com/pacientes');
 
   request.addEventListener('load', function () {
-    let response = request.responseText;
-    let elements = JSON.parse(response);
+    let requestError = document.querySelector('#request-error');
 
-    elements.forEach(function (patient) {
-      addPatient(patient);
-    });
+    if (request.status === 200) {
+      requestError.classList.add('show-message');
+
+      let response = request.responseText;
+      let patients = JSON.parse(response);
+
+      let newPatients = patients.map(function (patient) {
+        patient.name = patient.nome;
+        patient.weight = patient.peso;
+        patient.height = patient.altura;
+        patient.percentage = patient.gordura;
+        patient.bmi = patient.imc;
+        
+        return patient;
+      });
+
+      newPatients.forEach(function (patient) {
+        addPatient(patient);
+      });
+    } else {
+      requestError.classList.remove('show-message');
+    }
   });
 
   request.send();

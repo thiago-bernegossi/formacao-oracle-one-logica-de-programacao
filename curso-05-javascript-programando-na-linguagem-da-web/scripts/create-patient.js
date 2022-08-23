@@ -38,9 +38,10 @@ function displaysTheErrorMessages(errorMessages) {
 }
 
 function addClass(value, className) {
-  let element = document.createElement('td');
+  let element = document.createElement('td');  
   element.textContent = value;
   element.classList.add(className);  
+  
   return element;
 }
 
@@ -53,7 +54,7 @@ function insertData(patient) {
   newPatient.appendChild(addClass(patient.height, 'info-height'));
   newPatient.appendChild(addClass(patient.percentage, 'info-percentage'));
   newPatient.appendChild(addClass(patient.bmi, 'info-bmi'));
-
+  
   return newPatient;
 }
 
