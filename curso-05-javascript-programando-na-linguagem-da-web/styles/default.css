@@ -11,59 +11,79 @@
 	padding: 0;
 }
 
+/* Importação · Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 /* Body */
 body {
-	color: #333;
-	font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-family:	'Questrial', sans-serif;
+	font-size: initial;
 }
 
 /* Header */
 header {
-	background-color: #333;
-  color: #fff;
-	height: 3em;
-	margin-bottom: 1em;
+	border-bottom: 1px solid #7a7a7a;
+	color: #fff;
+	height: 4.5em;
+	margin: 0 auto;
+	position: relative;
+  width: 940px;
 }
 
 header h1 {
+	color: #085454;
   display: inline-block;
 	font-size: 2em;
+	padding-top: 12.5px;
+	text-transform: capitalize;
 	vertical-align:	middle;
 }
 
-header .container:before {
-	content: '';
-	display: inline-block;
-	height: 100%;
-	vertical-align:	middle;
+#small-plant {
+	color:#ffb30d;
 }
 
-.container {
-	height: 100%;
-	margin: 0 auto;
-  width: 60%;
+/* Nav */
+nav {
+  position: absolute;
+  right: 0;
+	top: 30px;
+}
+  
+nav li {
+  display: inline;
+  margin-left: 15px;
+}
+
+nav a {
+  color: #7a7a7a;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #ffb30d;
 }
 
 /* Main */
 
 /* Section */
-section {
-	margin: 2em 0;
-	overflow: hidden;
+.container {
+	margin: 0 auto;
+	padding: 0;
+	width: 940px;
 }
 
-section h2 {
-  border-bottom: 1px solid #ccc;
-  display: block;
-	font-size: 18px;
-	margin-bottom: 0.5em;
-	padding-bottom: 0.5em;
+.secondary-title {
+	color: #7a7a7a;
+	display: block;
+	margin: 15px 0 15px 0;
 }
 
 /* Article */
 .article {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .hideValues {
@@ -74,25 +94,38 @@ section h2 {
 
 /* Article */
 table {
-	margin-bottom: 0.5em;
+	border-collapse: collapse;
+	margin-bottom: 0.5em;	
   table-layout: fixed;
   width: 100%;
 }
 
+caption {
+	text-align: left;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #7a7a7a;
+}
+
 th, td {
-  border: 1px solid #ccc;
   margin: 0;
 	padding: 0.7em;
 	text-align: center;
 }
 
 th {
-  background-color: #eee;
+  background-color: #085454;
+	color: #fff;
 	font-weight: bold;
 }
 
 .reportError {
-	background-color: #f08080;
+	background-color: #085454;
 }
 
 .fadeAction  {
@@ -102,7 +135,7 @@ th {
 
 /* Section */
 .show-message {
-	color: #f00;
+	color: #000;
 	display: none;
 	margin-bottom: 0.5em;
 }
@@ -111,45 +144,58 @@ th {
 
 /* Section */
 #error-messages {
-	color: #f00;
+	color: #085454;
 	margin-bottom: 0.5em;
 }
 
 /* Article */
 label {
-	color: #555;
+	color: #085454 ;
 	display: block;
 	font-weight: bold;
 	margin-bottom: 0.2em;
 }
 
 .text-field {
-	border: 1px solid #ccc;
+	background-color: #f2f2f2;
+	border: none;
+	color: #000;
 	display: inline-block;
 	margin-bottom: 0.5em;
 	padding: 0.7em;	
 	width: 100%;
 }
 
+ul {
+	padding-left: 17px;
+}
+
 button {
-	background-color: #44ce6f;
-	border: 0;
+	background-color: #ffb30d;
+	border: none;
 	color: #fff;
 	cursor: pointer;
+	font-size: initial;
 	margin: -3px 0 0 0;
-	padding: 0.7em 2em;
+	padding: 0.7em;
 	width: 19.25%;
+		clear: both;
     display: block;
-    clear: both;
     margin: 10px 0px;
 }
 
-button:active {
-	border: 0;
-	margin-top: 0px;
+/* Footer */
+footer {
+	border-top: 1px solid #7a7a7a;
+	margin: 0 auto;
+	margin-top: 19px;
+  width: 940px;
 }
 
-button[disabled=disabled], button:disabled {
-  background-color: #808080;
-	border-color: #a9a9a9;
+.signature {
+  color: #085454;
+	font-weight: bold;
+	height: 4.5em;
+	padding-top: 25.5px;
+	text-align: center;
 }

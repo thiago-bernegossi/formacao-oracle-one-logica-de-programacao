@@ -1,5 +1,8 @@
 // Este código-fonte segue a definição completa dos padrões de codificação do Google para a linguagem de programação JavaScript.
 
+// Obs.: Este código-fonte contém a diretiva de execução em modo estrito.
+'use strict';
+
 function checkWeight(weight) {
   if (weight > 0 && weight < 1000) {
     return true;
@@ -50,7 +53,7 @@ for (let counter = 0; counter < patients.length; counter++) {
   }
   
   if (weightIsValid && heightIsValid) {
-    let bmi = calculateBmi(weight, height)
+    let bmi = calculateBmi(weight, height);
     infoBmi.textContent = bmi;
   }
 }

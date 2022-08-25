@@ -4,37 +4,51 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="content-security-policy" content="default-src 'self' https://api-pacientes.herokuapp.com/pacientes; font-src 'self' https://fonts.gstatic.com; img-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com;">
+    <meta http-equiv="default-style" content="Folha de Estilo em Cascata · Padrão">
     <meta http-equiv="refresh" content="600">
-    <meta name="application-name" content="Formação Oracle ONE: Front-End">
+    <meta name="application-name" content="Formação Oracle ONE: Lógica de Programação">
     <meta name="author" content="Thiago Bernegossi">
-    <meta name="description" content="Este código-fonte trata-se de uma prática pedagógica intrínseca a Formação Oracle ONE: Lógica de Programação.">
-    <meta name="generator" content="Microsoft Visual Studio Code">
+    <meta name="description" content="Este código-fonte trata-se de uma prática pedagógica intrínseca a Formação Oracle ONE: Lógica de Programação">
+    <meta name="generator" content="Microsoft Visual Studio Code · Versão: 1.70.2">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="publisher" content="Thiago Bernegossi">
+    <meta name="robots" content="noarchive, nocache, nofollow, noimageindex, noindex, noodp, nosnippet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="index.html" dir="ltr">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="author" title="Repositório de código-fonte contendo a prática pedagógica intrínseca a Formação Oracle ONE: Lógica de Programação" href="https://github.com/thiago-bernegossi">
+    <link rel="icon" title="Ícone do website a ser exibido no navegador da World Wide Web" href="images/favicon.ico">
+    <link rel="stylesheet" title="Folha de Estilo em Cascata · Padrão" href="styles/default.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap">
     <title>Prática Pedagógica · Formação Oracle ONE: Lógica de Programação</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1>Alura Nutrição</h1>
-      </div>
+      <h1 class="first-title">Nutrição Alura <span id="small-plant">&#9880;</span></h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Área do Cliente</a>
+          </li>
+          <li>
+            <a href="">Sair</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="container">
-        <h2 class="secondary-title">Localizar Pacientes</h2>
+        <h2 class="secondary-title">01. Localizar</h2>
         <article class="article">        
-          <label for="filtered-value">Nome:</label>
-          <input id="filtered-value" class="text-field" name="name" type="text" placeholder="Digite o nome do paciente:">
+          <label for="filtered-value">Nome</label>
+          <input id="filtered-value" class="text-field" name="name" type="text" autofocus>
         </article>
       </section>
       <section class="container">
-        <h2 class="secondary-title">Lista de Pacientes</h2>
+        <h2 class="secondary-title">02. Listar</h2>
         <article class="article">
           <table>
+            <caption>* Lista de Pacientes</caption>
             <thead>
               <tr>
                 <th>Nome</th>
@@ -78,37 +92,45 @@
         </article>
       </section>
       <section class="container">
-       <h2 class="secondary-title">Buscar Pacientes</h2>
-       <span id="request-error" class="show-message">Não foi possível completar a operação!</span>
+        <h2 class="secondary-title">03. Buscar</h2>
+        <p id="request-error" class="show-message">
+          Não foi possível completar a operação!
+        </p>
         <article class="article">        
           <button id="search-button" class="main-button" type="submit">Buscar</button>
+        </article>
       </section>
       <section class="container">
-        <h2 class="secondary-title">Adicionar Pacientes</h2>
+        <h2 class="secondary-title">04. Adicionar</h2>
         <ul id="error-messages"></ul>
         <article class="article">
           <form id="patient-form">
             <div class="patient-data">
-              <label for="name">Nome:</label>
-              <input id="name" class="text-field" name="name" type="text" placeholder="Digite o nome do paciente:">
+              <label for="name">Nome</label>
+              <input id="name" class="text-field" name="name" type="text">
             </div>
             <div class="patient-data">
-              <label for="weight">Peso (kg):</label>
-              <input id="weight" class="text-field" name="weight" type="text" placeholder="Digite o peso (kg) do paciente:">
+              <label for="weight">Peso (kg)</label>
+              <input id="weight" class="text-field" name="weight" type="text">
             </div>
             <div class="patient-data">
-              <label for="height">Altura (m):</label>
-              <input id="height" class="text-field" name="height" type="text" placeholder="Digite a altura (m) do paciente:">
+              <label for="height">Altura (m)</label>
+              <input id="height" class="text-field" name="height" type="text">
             </div>
             <div class="patient-data">
-              <label for="percentage">Gordura Corporal (%):</label>
-              <input id="percentage" class="text-field" name="percentage" type="text" placeholder="Digite a porcentagem (%) de gordura corporal do paciente:">
+              <label for="percentage">Gordura Corporal (%)</label>
+              <input id="percentage" class="text-field" name="percentage" type="text">
             </div>
             <button id="add-button" class="main-button" type="submit">Adicionar</button>
           </form>
         </article>
 		  </section>
     </main>
+    <footer>
+      <p class="signature">
+        Copyright &copy; 2022 &middot; Nutrição Alura, S.A. &middot; Todos os direitos reservados.
+      </p>
+    </footer>
     <script src="scripts/calculate-bmi.js"></script>
     <script src="scripts/create-patient.js"></script>
     <script src="scripts/delete-patient.js"></script>
