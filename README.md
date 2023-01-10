@@ -1,6 +1,6 @@
 # Formação Oracle ONE: Lógica de Programação
 
-Repositório público que engloba todas as práticas pedagógicas intrínsecas a **"Formação Oracle ONE: Lógica de Programação"** do Programa ONE: Oracle Next Education.
+Repositório público que engloba todas as práticas pedagógicas intrínsecas a **Formação Oracle ONE: Lógica de Programação** do Programa ONE: Oracle Next Education.
 
 . . .
 
@@ -23,14 +23,14 @@ Repositório público que engloba todas as práticas pedagógicas intrínsecas a
 
 . . .
 
-## Prática da Formação Oracle ONE: Lógica de Programação
+## Projeto da Formação Oracle ONE: Lógica de Programação
 
-- **Projeto**
-  - ![A imagem retrata a Prática Pedagógica da Formação Oracle ONE: Lógica de Programação](https://snz04pap001files.storage.live.com/y4mrw7llxeSsVB4IYHddbA_Kv7q4NtqRz24ZpC_4t3sTbHV2Onf0AICQ3lzMmtFhp64cLM8DxUQl6A5U-3wxojOFsKBZqOlwa9_B1ELZjZqmPVDy26Up65oclsebgWaPJqxi24c4ZisNeNzk34mEDv_tf-MoY3uUPUy3yUMTOkmwb9E8kgySrd0X8Fx-dAxrkLY?width=470&height=355&cropmode=none)
+- **Prática**
+  - ![A imagem retrata uma Prática Pedagógica da Formação Oracle ONE: Lógica de Programação.](https://snz04pap001files.storage.live.com/y4m_ZpW0uSr7ZkKsK4SIhSPjt7c3RoOBPtXbwp1BYxIBM6pv5bPG8Cvu80cvNjxGzK7KCz9yxjNtTkIc9zXYEjyYkd7RGhfXWQLnnG3t9CcW6McgZJ5IxpUMv8tXPk5p3SO1X064-jMsT9C4wNTMKJcUHK82q1GNpqco2CEojRLdBDgGFXeN1zdIQ4YyqO8ETZa?width=660&height=653&cropmode=none)
 
 . . .
 
 ## Título da Formação Oracle ONE: Lógica de Programação
 
 - **Certificado**
-  - ![A imagem retrata o Certificado da Formação Oracle ONE: Lógica de Programação](https://snz04pap001files.storage.live.com/y4mxrD73uLOwupRe6hiCRFBkhB_yKfgD6mmrz9bLryfurcLRJOMj4-V0NXjZekg5D-2W_5H0eMrfsmt4yf69WyzwzoKxo6AaPJuNAz1LBbO-qxbMbDCgbsqAhYUeBxzjjiWUEd_1V5trp4FDuQIoBQhJK_nvz6YcQL19c-K_YQOHyvVZ-h1hiCzXYfqsFybJ0xw?width=470&height=304&cropmode=none)
+  - ![A imagem retrata o Certificado da Formação Oracle ONE: Lógica de Programação.](https://snz04pap001files.storage.live.com/y4mAQDEaRQozwn3b38LeHyspoVjsRvqcZrC5RLHkLriTS2XVRiFabkmZ6heuG4wE0vXfBSU-q3vwbiKzxVkAw86oTLlFhp44WHOPOTzEkhuDp9aqFVfWw9ZPxOYTHl3bjaJBL9rf4_AGNkjv8P84jpx9THXRSoFN80u7rfU1M3ua34j-zx9QF2HWUA2MeW3QPDd?width=660&height=429&cropmode=none)
